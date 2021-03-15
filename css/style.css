@@ -1,0 +1,210 @@
+@font-face {
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Montserrat";
+    font-display: swap;
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Montserrat";
+    font-display: swap;
+    src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+    font-weight: 700;
+    font-style: normal;
+    font-family: "BebasNeue";
+    font-display: swap;
+    src: url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
+        url("../fonts/BebasNeue-Bold.woff") format("woff");
+}
+
+html {
+    box-sizing: border-box;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+}
+
+button, input {
+    font: inherit;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+  /* container */
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.item-orange {
+    background: linear-gradient(315deg, #ae320a 19.87%, #f75d2b 80.11%),#0a0e20;
+}
+
+.item-green {
+    background: linear-gradient(315deg, #37c058 19.87%, #4bdb6d 80.11%), #0a0e20;
+}
+
+.item-yellow {
+    color: #000;
+    background: linear-gradient(315deg, #ffc060 19.87%, #ffe79a 80.11%),#0a0e20;
+}
+
+.item-light-green {
+    background: linear-gradient(315deg, #8fbe15 19.87%, #aad50e 80.11%),#0a0e20;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-logo {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.header-btn {
+    padding: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: inherit;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.main {
+    position: relative;
+    padding: 100px 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bg--orange {
+    bottom: -143px;
+}
+
+.main__left {
+    flex: 2;
+}
+
+.main__left-heading {
+    margin-bottom: 24px;
+    font-size: 46px;
+    line-height: 54px;
+    font-weight: 700;
+}
+
+.list__item {
+    margin-bottom: 20px;
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.list__item-heading {
+    font-weight: 600;
+}
+
+.main__right {
+    margin-top: 30px;
+    flex: 1;
+}
+
+.props__item {
+    margin-bottom: 26px;
+}
+
+.props__item-title {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.props__item-descr {
+    font-family: 'BebasNeue';
+    font-size: 96px;
+}
+
+.props__item-descr sup {
+    font-size: 20px;
+}
+
+.main__right-btn {
+    padding: 20px 43px;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #fff;
+    background: inherit;
+    border: 1px #fff solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slick-dots {
+    top: 20%;
+    right: -300px;
+}
+
+.slick-dots li button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.slick-dots .slick-active button {
+    background-color: #000;
+}
+
+.slick-dots li button::before {
+    display: none;
+}
