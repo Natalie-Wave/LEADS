@@ -96,6 +96,7 @@ h1, h2, h3, h4, p, ul {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -191,9 +192,15 @@ h1, h2, h3, h4, p, ul {
     cursor: pointer;
 }
 
+.slick-prev, .slick-next {
+    display: none!important;
+}
+
 .slick-dots {
+    width: 120px;
+    height: 25px;
     top: 20%;
-    right: -300px;
+    right: 30%;
 }
 
 .slick-dots li button {
@@ -207,4 +214,124 @@ h1, h2, h3, h4, p, ul {
 
 .slick-dots li button::before {
     display: none;
+}
+
+.btn--yellow {
+    color: #000;
+}
+
+@media (max-width: 1440px) {
+    .slick-dots {
+        right: 23%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main__left-heading {
+        font-size: 40px;
+    }
+
+    .props__item {
+        margin-bottom: 40px;
+    }
+
+    .props__item-descr {
+        font-size: 74px;
+    }
+
+    .slick-dots {
+        right: 18%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 792px;
+    }
+
+    .main {
+        padding: 200px 0;
+    }
+
+    .main__left {
+        flex: .7;
+    }
+
+    .main__left-heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .list__item-heading {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .list__item-descr {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .main__right {
+        flex: 0;
+        margin-top: 10px;
+    }
+
+    .props__item {
+        margin-bottom: 20px;
+    }
+
+    .props__item-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .props__item-descr {
+        font-size: 64px;
+    }
+
+    .main__right-btn {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .slick-dots {
+        top: 27%;
+        right: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 568px;
+    }
+
+    .main {
+        padding: 50px 0;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__left {
+        margin-bottom: 40px;
+    }
+    
+    .list__item {
+        display: none;
+    }
+
+    
+
+    .slick-dots {
+        top: 30%;
+        right: 48%;
+    }
+
+    .slick-dots li button {
+        width: 15px;
+        height: 15px;
+    }
 }
